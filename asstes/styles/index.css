@@ -49,6 +49,9 @@ body {
     border: solid red 1px;
     margin-top: 40px;
 }
+.hero-photo {
+    display: none;
+}
 .likes {
     display: flex;
     gap: 50px;
@@ -222,4 +225,48 @@ body {
     border-radius: 35px;
     border: 1px solid var(--font-color1);
 
+}
+@media (width>=1140px) {
+    .container {
+        width: 1140px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    /* logo part */
+    .logo {
+        width: 90px;
+        height: 60px;
+        margin:70px auto 40px auto ;
+    }
+    /* hero part */
+    #hero {
+        border: solid red 1px;
+        display: flex;
+        align-items: center;
+        gap: 70px;
+    }
+    .hero-photo {
+        display:block;
+        border: 1px black solid;
+    }
+    #hero h1 {
+        font-size: var(--font-xxl);
+        line-height: 64px;
+    }
+    #hero p {
+        width: 450px;
+    }
+    .buts {
+        flex-direction:row-reverse;
+        gap: 10px;
+        justify-content: right;
+    }
+    .buy:hover {
+        background-color:var( --button-bg-h) ;
+    }
+    .call:hover {
+        border: 1px solid var(--font-color2);
+        color: var(--font-color2);
+
+    }
 }
