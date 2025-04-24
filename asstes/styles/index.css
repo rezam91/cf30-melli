@@ -126,10 +126,32 @@ body {
 }
 /* country part */
 #country {
+    margin-top: 60px;
+    text-align: center;
     border: solid 1px blue;
 }
-
+#country p {
+    font-weight: var(--font-w2);
+    font-size: var(--font-m);
+    color: var(--font-color2);
+}
+#country ul {
+    list-style: none;
+    padding-right: 0;
+    display: flex;
+    justify-content: space-between;
+}
+#country ul li figure{
+    margin: 0;
+    text-align: center;
+}
+#country ul li figure figcaption {
+    font-weight: var(--font-w2);
+    font-size: var(--font-s);
+    color: var(--font-color1);
+}
 /* offers part */
 #offers {
+    margin-top: 60px;
     border: solid 1px green;
 }
