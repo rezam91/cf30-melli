@@ -151,6 +151,10 @@ body {
     font-size: var(--font-s);
     color: var(--font-color1);
 }
+.img-hov{
+    /* display: none; */
+    visibility: hidden;
+}
 .ver-line {
     display: none;
     height:64px;
@@ -281,83 +285,32 @@ body {
         margin: 0;
         text-align: center;
     }
+    #country ul li figure svg:hover .img-hov{
+        visibility: visible;
+    }
     .ver-line {
         display: block;
     }
     /* offers part */
-    #offers {
-        /* margin-top: 120px; */
-        /* border: solid 1px green; */
-    }
     #offers h2 {
-        /* margin-top: 0; */
-        /* margin-bottom: 0; */
-        /* font-family: var(--font-o); */
-        /* color:var(--font-color2); */
         font-size:var(--font-xl) ;
     }
     #offers p {
         width: 465px;
-        /* margin-top: 0; */
-        /* color:var(--font-color1);
-        font-size:var(--font-s) ;
-        font-weight: var(--font-w1); */
     }
-    #offers ul {
 
-        /* display: flex;
-        flex-wrap: wrap;
-        row-gap: 25px;
-        list-style: none;
-        padding-right: 0; */
-    }
     #offers ul li {
         margin-top: 35px;
         margin-bottom: 35px;
         width: 25%;
     }
-    .boots {
-        /* width: 100%;
-        text-align: center;
-        border: 1px green solid; */
-    }
-    #offers ul li .boots figure {
-        /* margin: 0;
-        border: 1px blue solid;
-        width: 100%; */
-    }
-    #offers ul li .boots figure img {
-        /* border-radius: 12px; */
 
-    }
     .mob-hidden {
         display: block;
     }
-    .boot-name {
-        /* margin-top: 15p;
-        margin-bottom: 0;
-        font-weight:var(--font-w2) ;
-        font-size:var(--font-m) ;
-        color: var(--font-color2); */
-    }
-    .boot-type {
-        /* margin-top: 0;
-        font-weight:var(--font-w1) ;
-        font-size:var(--font-s) ;
-        color: var(--font-color1); */
-    }
+
     #offers a {
         margin-bottom: 110px;
-        /* margin:10px auto 40px auto;
-        display: block;
-        width: fit-content;
-        text-decoration: none;
-        color: var(--font-color1);
-        padding:8px 32px;
-        background-color:var(--body-bg) ;
-        border-radius: 35px;
-        border: 1px solid var(--font-color1); */
-
     }
     #offers a:hover {
         color: var(--font-color2);
